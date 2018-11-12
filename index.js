@@ -6,7 +6,6 @@
  * Last Updated: Nov 05, 2018
  */
 
-
  'use strict';
 
  var AWS = require('aws-sdk');
