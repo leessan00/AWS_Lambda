@@ -1,0 +1,18 @@
+{
+  "name": "extract-metadata",
+  "version": "1.0.0",
+  "description": "Extract Video Metadata",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "aws lambda update-function-code --function-name arn:aws:lambda:us-east-1:855672719597:function:extract-metadata --zip-file fileb://Lambda-Deployment.zip",
+    "predeploy": "zip -r Lambda-Deployment.zip * -x *.zip *.log"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.349.0"
+  },
+  "author": "leessan0",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "run-local-lambda": "^1.1.1"
+  }
+}
